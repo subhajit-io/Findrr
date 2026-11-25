@@ -145,6 +145,11 @@ Findrr is built upon four unyielding engineering principles:
 - **Default-Deny RBAC & Audit Trail:** Strict Role-Based Access Control (`owner` vs `staff`), HttpOnly SameSite=Strict cookies, and immutable audit logs for all administrative operations.
 - *Detailed Specification:* [06_ENTERPRISE_OPERATIONS_PORTAL.md](06_ENTERPRISE_OPERATIONS_PORTAL.md)
 
+### 6. Findrr Access Card & Conversational Web Portal (`letusfindrr.pages.dev`)
+- **Conversational Marketing & Live In-Browser AI:** Interactive chat-history UI with Light/Dark/Night modes and a guardrailed client-side AI assistant connected to this repository.
+- **Findrr Access Card (`1999-Q<Y><MM>-<R3><K1>-TRL`):** Server-generated trial card loaded with **1,999 Access Points (AP)** for an unspecified-quadrant trial — usable only inside Findrr (`pay only using AP for what you use`); continuing paid features after the trial requires real money.
+- **D1 Access Card Ledger & Balance Checker:** Stores `accessCardNumber`, `linkedEmail`, and `currentPoints` in Cloudflare D1 (`access_cards`), with live balance lookup (`/api/access-card`) and direct 72-hour founder recovery (`subhajit32das@gmail.com`).
+
 ---
 
 ## Documentation Navigation Directory
