@@ -73,8 +73,8 @@ flowchart TB
     HubScreen --> UPIHandler
 
     %% Cloud Network Connections
-    ZKCrypto -.->|Encrypted Sync (AES-256)| SupabaseVault
-    VM -.->|Auth Verification (SHA-256)| SupabaseAuth
+    ZKCrypto -.->|"Encrypted Sync (AES-256)"| SupabaseVault
+    VM -.->|"Auth Verification (SHA-256)"| SupabaseAuth
     UPIHandler -.->|UPI Intent Handshake| RazorpayEngine
     VM -.->|Fetch Deal Catalog| MerchantAffiliates
 

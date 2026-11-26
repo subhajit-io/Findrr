@@ -72,12 +72,12 @@ flowchart TD
     VM <--> Lyra
     VM <--> Arena
     Lyra -->|Parameterized Queries| RoomDB
-    MCPSocket <-->|Local IPC (Port 8080)| VM
+    MCPSocket <-->|"Local IPC (Port 8080)"| VM
     VM --> ZKCrypto
     ZKCrypto -->|Generates Offline Pass| ScopedStore
 
     %% External Network Flows
-    ZKCrypto -.->|Encrypted Sync (AES-256)| SupabaseDB
+    ZKCrypto -.->|"Encrypted Sync (AES-256)"| SupabaseDB
     VM -.->|Hash Verification Only| SupabaseAuth
     UI -.->|Launch Native UPI| UPIIntent
     UPIIntent -.->|Process Micro-Fee| RazorpayGateway
